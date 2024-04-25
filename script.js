@@ -61,17 +61,12 @@ function getVideoPath(drink) {
       case 'Pisco Sour':
           return 'videos/pisco_sour.mov';
       case 'White Russian':
-          return 'videos/white_russian.mov';
       case 'Cosmopolitan':
           return 'videos/cosmopolitan.mov';
       case 'Tom Collins':
           return 'videos/tom_collins.mov';
       case 'Sangria':
           return 'videos/sangria.mov';
-      case 'French 75':
-          return 'videos/french_75.mov';
-      case 'Mint Julep':
-          return 'videos/mint_julep.mov';
       case 'Moscow Mule':
           return 'videos/moscow_mule.mov';
       case 'Bloody Mary':
