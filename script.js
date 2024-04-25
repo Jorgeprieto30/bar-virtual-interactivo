@@ -90,7 +90,7 @@ function getVideoPath(drink) {
       case 'Martini':
           return 'videos/martini.MP4';
       case 'Mai Tai':
-          return 'videos/mai_tai.MP$';
+          return 'videos/mai_tai.MP4';
       default:
           return 'videos/barman_esperando.mov';
   }
