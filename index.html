@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Bar Virtual Interactivo</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="icon" type="image/png" href="bola.png">
+<!-- Añadiendo la fuente Lobster desde Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Título de la página colocado por encima de todo -->
+<div id="menuTitle">LA BOTI</div>
+
+<div id="container">
+    <!-- Video del barman esperando -->
+    <video id="barmanVideo" autoplay loop controls>
+        <source src="videos/barman_esperando.mov" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <div id="drinkMenu">
+        <!-- Contenedor para las opciones e ingredientes -->
+        <div class="drinkOptions">
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="mojito" onclick="selectDrink('Mojito')">Mojito</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="caipirinha" onclick="selectDrink('Caipirinha')">Caipirinha</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="margarita" onclick="selectDrink('Margarita')">Margarita</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="cosmopolitan" onclick="selectDrink('Cosmopolitan')">Cosmopolitan</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="tom_collins" onclick="selectDrink('Tom Collins')">Tom Collins</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="sangria" onclick="selectDrink('Sangria')">Sangria</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="french_75" onclick="selectDrink('French 75')">French 75</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="mint_julep" onclick="selectDrink('Mint Julep')">Mint Julep</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="moscow_mule" onclick="selectDrink('Moscow Mule')">Moscow Mule</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="bloody_mary" onclick="selectDrink('Bloody Mary')">Bloody Mary</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="aperol_spritz" onclick="selectDrink('Aperol Spritz')">Aperol Spritz</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="martini" onclick="selectDrink('Martini')">Martini</div>
+            <div class="drinkOption animate__animated animate__fadeInUp" data-video="mai_tai" onclick="selectDrink('Mai Tai')">Mai Tai</div>
+            <!-- Lista de ingredientes, inicialmente oculta -->
+            <ul id="ingredientsList" style="display: none;"></ul>
+            <!-- Botón Volver, inicialmente oculto -->
+            <div id="backButton" class="backButton" onclick="showAllDrinks()">Volver</div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

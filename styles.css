@@ -1,0 +1,122 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif; /* Asegurando una fuente común */
+  background: #f0f0f0; /* Un fondo ligero para el cuerpo */
+}
+#container {
+  display: flex;
+  height: 100vh; /* Utiliza toda la altura de la ventana gráfica */
+}
+#barmanVideo {
+  flex-grow: 3;
+  background: #0071ce; /* Azul de Walmart */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#drinkMenu {
+  flex-grow: 1;
+  background: white; /* Fondo claro para el menú */
+  box-shadow: -4px 0 8px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto; /* Permite el desplazamiento si hay muchos elementos */
+}
+/* ...otros estilos... */
+
+#menuTitle {
+    font-family: 'Lobster', cursive; /* Aplica la fuente Lobster */
+    font-size: 2em; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    color: #0071ce; /* Azul de Walmart para el texto */
+    padding: 20px 0; /* Padding arriba y abajo para el título */
+    background: white; /* Fondo blanco para el título */
+    width: 100%; /* Ancho completo */
+    position: absolute; /* Posición absoluta */
+    top: 0; /* En la parte superior de la página */
+    left: 0; /* Alineado a la izquierda de la página */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+#container {
+    display: flex;
+    height: calc(100vh - 60px); /* Altura del contenedor ajustada para no solapar el título */
+    margin-top: 60px; /* Espacio para el título */
+}
+
+/* ...otros estilos... */
+
+.drinkOption {
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+  background: white; /* Fondo blanco para cada opción */
+  border: 2px solid #ffc220; /* Contorno amarillo de Walmart */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+.drinkOption:hover {
+  transform: scale(1.05); /* Aumenta ligeramente de tamaño al pasar el ratón */
+  background-color: #ffffff; /* Mantiene el fondo blanco en hover */
+  border-color: #ffd633; /* Cambia a un amarillo más claro en hover */
+}
+.backButton {
+  padding: 10px 20px;
+  margin: 20px;
+  background: #0071ce; /* Color azul */
+  color: white; /* Texto en blanco para contraste */
+  cursor: pointer;
+  font-size: 1em;
+  display: none; /* Inicialmente oculto hasta que se llama a showBackButton */
+  align-self: center; /* Centra el botón en la barra del menú */
+  border: none; /* No border */
+  border-radius: 30px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidad */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos de hover */
+}
+
+.backButton:hover {
+  background-color: #ffd633; /* Color más oscuro al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada para efecto de elevación */
+}
+
+.backButton:active {
+  background-color: #dfbb29; /* Color aún más oscuro al hacer clic */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra vuelve a la normalidad */
+}
+
+#ingredientsList {
+  list-style: none; /* Elimina los puntos de lista */
+  padding: 0;
+  margin-top: 20px; /* Espacio entre la opción de bebida y la lista de ingredientes */
+  background: #fff; /* Fondo blanco para la lista */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+  padding: 10px; /* Padding general */
+  width: 90%; /* Ancho relativo para mantener todo alineado */
+  margin-left: auto; /* Centrado horizontal */
+  margin-right: auto; /* Centrado horizontal */
+}
+#ingredientsList li {
+  padding: 8px; /* Espacio dentro de cada elemento */
+  margin-bottom: 5px; /* Espacio entre elementos */
+  background: #ecf0f1; /* Fondo para cada ingrediente */
+  border-radius: 5px; /* Bordes redondeados para los ingredientes */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Sombra suave para cada ingrediente */
+  font-size: 1em; /* Tamaño de fuente adecuado */
+  color: #2c3e50; /* Color de texto */
+}
+.hideMenuOptions {
+  display: none;
+}
+/* Estilo inicial para elementos ocultos */
+.ingredient {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
