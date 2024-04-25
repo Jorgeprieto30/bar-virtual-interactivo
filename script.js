@@ -26,6 +26,12 @@ function selectDrink(drink) {
   // Mostrar el botón de volver
   var backButton = document.getElementById('backButton');
   backButton.style.display = 'block';
+
+  // Ocultar el footer cuando se selecciona una bebida
+  var footer = document.getElementById('footer');
+  if (footer) {
+    footer.style.display = 'none';
+  }
 }
 
 function showAllDrinks() {
