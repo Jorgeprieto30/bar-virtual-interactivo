@@ -62,21 +62,21 @@ function getVideoPath(drink) {
           return 'videos/pisco_sour.mov';
       case 'White Russian':
       case 'Cosmopolitan':
-          return 'videos/cosmopolitan.mov';
+          return 'videos/cosmopolitan.MP4';
       case 'Tom Collins':
-          return 'videos/tom_collins.mov';
+          return 'videos/tom_collins.MP4';
       case 'Sangria':
-          return 'videos/sangria.mov';
+          return 'videos/sangria.MP4';
       case 'Moscow Mule':
-          return 'videos/moscow_mule.mov';
+          return 'videos/moscow_mule.MP4';
       case 'Bloody Mary':
-          return 'videos/bloody_mary.mov';
+          return 'videos/bloody_mary.MP4';
       case 'Aperol Spritz':
-          return 'videos/aperol_spritz.mov';
+          return 'videos/aperol_spritz.MP4';
       case 'Martini':
-          return 'videos/martini.mov';
+          return 'videos/martini.MP4';
       case 'Mai Tai':
-          return 'videos/mai_tai.mov';
+          return 'videos/mai_tai.MP$';
       default:
           return 'videos/barman_esperando.mov';
   }
