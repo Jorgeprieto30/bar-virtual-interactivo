@@ -32,7 +32,15 @@ function selectDrink(drink) {
   if (footer) {
     footer.style.display = 'none';
   }
+
+  // Enviar evento a Google Analytics
+  gtag('event', 'select_drink', {
+    'event_category': 'Drinks',
+    'event_label': drink,
+    'value': 1
+  });
 }
+
 
 function showAllDrinks() {
   // Mostrar todas las opciones de bebida
